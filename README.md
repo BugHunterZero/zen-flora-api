@@ -8,4 +8,4 @@ This is the backend API for the Zero Flora application. It provides RESTful endp
 
 - Node.js
 - Express.js
-- MySQL
+- seq MySQL
