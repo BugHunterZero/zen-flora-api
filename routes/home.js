@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const homeController = require('../controllers/homeController');
+const homeController = require('../controllers/homeController'); // ✅ correct file
 
-router.get('/', homeController.getHomePageContent);
-router.post('/', homeController.updateHomePageContent);
-
+router.get('/', homeController.getAllHomePageContents);        
+router.get('/:id', homeController.getHomePageContentById);     
+router.post('/', homeController.createHomePageContent);        
+router.put('/:id', homeController.updateHomePageContentById);  
+router.delete('/:id', homeController.deleteHomePageContentById); 
 module.exports = router;
