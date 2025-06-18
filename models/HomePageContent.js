@@ -13,6 +13,9 @@ const HomePageContent = sequelize.define('HomePageContent', {
   hero_subtitle: {
     type: DataTypes.STRING
   },
+  description:{
+    type:DataTypes.STRING
+  },
   hero_image: {
     type: DataTypes.STRING
   }
